@@ -18,10 +18,10 @@ class ComposerStaticInit442ff7bff31ee8efa12b01fc20ca5357
         '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
+        '4e8671d7be9056dcd04ddd9e8e15f9cc' => __DIR__ . '/..' . '/encore/laravel-admin/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         '0d8253363903f0ac7b0978dcde4e28a0' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/helpers.php',
-        '4e8671d7be9056dcd04ddd9e8e15f9cc' => __DIR__ . '/..' . '/encore/laravel-admin/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -114,6 +114,7 @@ class ComposerStaticInit442ff7bff31ee8efa12b01fc20ca5357
         ),
         'E' => 
         array (
+            'Encore\\CKEditor\\' => 16,
             'Encore\\Admin\\' => 13,
             'Egulias\\EmailValidator\\' => 23,
         ),
@@ -326,6 +327,10 @@ class ComposerStaticInit442ff7bff31ee8efa12b01fc20ca5357
         array (
             0 => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker',
         ),
+        'Encore\\CKEditor\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel-admin-ext/ckeditor/src',
+        ),
         'Encore\\Admin\\' => 
         array (
             0 => __DIR__ . '/..' . '/encore/laravel-admin/src',
@@ -409,6 +414,7 @@ class ComposerStaticInit442ff7bff31ee8efa12b01fc20ca5357
         'App\\Admin\\Controllers\\AuthController' => __DIR__ . '/../..' . '/app/Admin/Controllers/AuthController.php',
         'App\\Admin\\Controllers\\ExampleController' => __DIR__ . '/../..' . '/app/Admin/Controllers/ExampleController.php',
         'App\\Admin\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Admin/Controllers/HomeController.php',
+        'App\\Admin\\Controllers\\ProductController' => __DIR__ . '/../..' . '/app/Admin/Controllers/ProductController.php',
         'App\\Admin\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/Admin/Controllers/UserController.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
@@ -419,6 +425,7 @@ class ComposerStaticInit442ff7bff31ee8efa12b01fc20ca5357
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+        'App\\Http\\Controllers\\ProductController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProductController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',
@@ -1137,6 +1144,9 @@ class ComposerStaticInit442ff7bff31ee8efa12b01fc20ca5357
         'Encore\\Admin\\Widgets\\Tab' => __DIR__ . '/..' . '/encore/laravel-admin/src/Widgets/Tab.php',
         'Encore\\Admin\\Widgets\\Table' => __DIR__ . '/..' . '/encore/laravel-admin/src/Widgets/Table.php',
         'Encore\\Admin\\Widgets\\Widget' => __DIR__ . '/..' . '/encore/laravel-admin/src/Widgets/Widget.php',
+        'Encore\\CKEditor\\CKEditor' => __DIR__ . '/..' . '/laravel-admin-ext/ckeditor/src/CKEditor.php',
+        'Encore\\CKEditor\\CKEditorServiceProvider' => __DIR__ . '/..' . '/laravel-admin-ext/ckeditor/src/CKEditorServiceProvider.php',
+        'Encore\\CKEditor\\Editor' => __DIR__ . '/..' . '/laravel-admin-ext/ckeditor/src/Editor.php',
         'Faker\\Calculator\\Iban' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Calculator/Iban.php',
         'Faker\\Calculator\\Inn' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Calculator/Inn.php',
         'Faker\\Calculator\\Luhn' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Calculator/Luhn.php',
