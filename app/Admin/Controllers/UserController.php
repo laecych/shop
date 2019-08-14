@@ -33,7 +33,7 @@ class UserController extends AdminController
         $grid->column('password', __('Password'));
         $grid->column('address', __('Address'));
         $grid->column('tel', __('Tel'));
-        $grid->column('remember_token', __('Remember token'));
+        // $grid->column('remember_token', __('Remember token'));
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
 
@@ -75,11 +75,11 @@ class UserController extends AdminController
 
         $form->text('name', __('Name'));
         $form->email('email', __('Email'));
-        $form->datetime('email_verified_at', __('Email verified at'))->default(date('Y-m-d H:i:s'));
+        // $form->datetime('email_verified_at', __('Email verified at'))->default(date('Y-m-d H:i:s'));
         $form->password('password', __('Password'));
         $form->text('address', __('Address'));
         $form->text('tel', __('Tel'));
-        $form->text('remember_token', __('Remember token'));
+        // $form->text('remember_token', __('Remember token'));
 
         return $form;
     }

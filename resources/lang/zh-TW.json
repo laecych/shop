@@ -14,9 +14,12 @@
     "Confirm Password": "確認密碼",
     "Toggle navigation": "縮放導覽工具",
     "Register": "註冊",
+    "name": "姓名",
     "Name": "姓名",
     "address": "地址",
+    "Address": "地址",
     "tel": "手機",
+    "Tel": "手機",
     "Logout": "登出",
     "You are logged in!" : "登入成功！"
 }
