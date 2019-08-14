@@ -35,6 +35,6 @@ Route::get('/service', function () {
 Auth::routes();
 
 // Route::get('/home', 'HomeController@home')->name('home');
-Route::get('/products', 'HomeController@products')->name('products');
+Route::get('/products', 'ProductController@products')->name('products');
 Route::get('/profile', 'HomeController@profile')->name('profile');
-Route::get('/control', 'HomeController@profile')->name('control');
+Route::get('/control', 'HomeController@control')->name('control');
