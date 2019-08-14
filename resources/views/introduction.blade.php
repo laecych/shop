@@ -1,5 +1,4 @@
 @extends('webtemplet')
-
 @section('content')
-    <h1>welcom to shop</h1>
+    <h1>公司介紹</h1>
 @endsection

@@ -19,19 +19,16 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function home()
-    {
-        return view('home')->with('title', 'home');
-    }
 
+    public function control()
+    {
+        return view('control');
+    }
     public function products()
     {
-        return view('products')->with('title', 'products');
+        return view('products');
     }
-    public function introduction()
-    {
-        return view('introduction')->with('title', 'introduction');
-    }
+
     public function profile()
     {
         return view('profile');

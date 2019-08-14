@@ -20,17 +20,21 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('/home', function () {
-//     return view('welcome');
-// });
-
-Auth::routes();
-Route::get('/control', function () {
-    return view('control');
+Route::get('/home', function () {
+    return view('welcome');
 });
 
-Route::get('/home', 'HomeController@home')->name('home');
+Route::get('/introduction', function () {
+    return view('introduction');
+});
+Route::get('/service', function () {
+    return view('service');
+});
+
+//驗證
+Auth::routes();
+
+// Route::get('/home', 'HomeController@home')->name('home');
 Route::get('/products', 'HomeController@products')->name('products');
-Route::get('/introduction', 'HomeController@introduction')->name('introduction');
 Route::get('/profile', 'HomeController@profile')->name('profile');
-// Route::get('/control', 'HomeController@profile')->name('control');
+Route::get('/control', 'HomeController@profile')->name('control');

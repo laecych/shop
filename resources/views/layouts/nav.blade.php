@@ -10,7 +10,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
-
+            <div class="links">
+            <a href="/home">Home</a>
+            <a href="/introduction">Introduction</a>
+            <a href="/products">Products</a>
+            <a href="/service">Service</a>
+            <a href="/profile">Profile</a>
+            </div>
             </ul>
 
             <!-- Right Side Of Navbar -->
