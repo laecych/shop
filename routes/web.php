@@ -13,12 +13,11 @@
 
 Route::get('/', function () {
     // return view('welcome');
-
     // $data = ['name' => 'vicky', 'say' => 'hi'];
     // return view('welcome')->with('name', 'vicky')
     //     ->with('say', '嗨！');
-    return view('welcome', ['name' => 'vicky', 'say' => '嗨！']);
-
+    // return view('welcome', ['name' => 'vicky', 'say' => '嗨！']);
+    return view('welcome');
 });
 
 // Route::get('/home', function () {
@@ -26,8 +25,12 @@ Route::get('/', function () {
 // });
 
 Auth::routes();
+Route::get('/control', function () {
+    return view('control');
+});
 
 Route::get('/home', 'HomeController@home')->name('home');
 Route::get('/products', 'HomeController@products')->name('products');
 Route::get('/introduction', 'HomeController@introduction')->name('introduction');
 Route::get('/profile', 'HomeController@profile')->name('profile');
+// Route::get('/control', 'HomeController@profile')->name('control');
