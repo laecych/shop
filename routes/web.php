@@ -31,10 +31,20 @@ Route::get('/service', function () {
     return view('service');
 });
 
+// Route::get('/product/index', function () {
+//     return view('product.index');
+// })->name('product.index');
+
+// Route::get('/products', function () {
+//     return view('product.index');
+// })->name('product.index');
+
 //驗證
 Auth::routes();
 
-// Route::get('/home', 'HomeController@home')->name('home');
+
 Route::get('/products', 'ProductController@index')->name('index');
+Route::get('/products/index', 'ProductController@index')->name('product.index');
+
 Route::get('/profile', 'HomeController@profile')->name('profile');
 Route::get('/control', 'HomeController@control')->name('control');
